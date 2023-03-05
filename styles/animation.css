@@ -1,0 +1,97 @@
+.dark-wrapper {
+    padding: 50px;
+    background: #202020;
+}
+
+.light-wrapper {
+    padding: 50px;
+    background: #ffffff;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    padding: 12px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.light {
+    border: 2px solid #E6EEF5;
+    border-radius: 50px;
+    color: #E6EEF5;
+    transition: transform .2s;
+    /* Плавное увелечение кнопки transform: scale(1.1); */
+}
+
+.light:hover {
+    transform: scale(1.1);
+    background: #E6EEF5;
+    color: #202020;
+}
+
+.light:active {
+    box-shadow: inset 0px -7px 5px rgba(32, 32, 32, 0.4);
+}
+
+.dark {
+    border: 2px solid #202020;
+    border-radius: 50px;
+    color: #202020;
+    transition: transform .2s;
+    /* Плавное увелечение кнопки transform: scale(1.1); */
+}
+
+.dark:hover {
+    transform: scale(1.1);
+    background: #202020;
+    border: 2px solid #202020;
+    color: #E6EEF5;
+}
+
+.dark:active {
+    box-shadow: inset 0px -5px 5px rgba(230, 238, 245, 0.4);
+}
+
+.title-wrapper {
+    padding: 50px;
+    text-align: center;
+}
+
+.title-wrapper a {
+    margin: auto;
+    animation: pulse;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+}
+
+.title-wrapper a:hover {
+    animation: none;
+    transform: none;
+}
+
+.keyframes-wrapper {
+    padding: 50px;
+    background: #C2AB9D;
+    overflow: hidden;
+    /* чтобы анимация не увеличивала экран */
+}
+
+.keyframes-wrapper img {
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -70%;
+        /* width: 300%; */
+    }
+
+    100% {
+        margin-left: 120%;
+        /* width: 100%; */
+    }
+}
